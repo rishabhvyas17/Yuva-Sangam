@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>युवा संगम - इंदौर | पंजीकरण</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Tiro+Devanagari+Hindi:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-hindi {
+            font-family: 'Tiro Devanagari Hindi', serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://placehold.co/1200x800/ff9933/ffffff?text=Bharat+Ke+Yuva');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header (from your file) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <svg class="h-10 w-10 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold font-hindi">युवा संगम</span>
+                    <span class="text-xs text-gray-500 font-semibold">छत्रपति संभाजी नगर, इंदौर</span>
+                </div>
+            </div>
+            <div>
+                <a href="#register" class="bg-orange-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-orange-600 transition duration-300">पंजीकरण करें</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section (from your file) -->
+    <section class="hero-bg text-white">
+        <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold font-hindi leading-tight mb-4">युवा संगम</h1>
+            <p class="text-xl md:text-2xl font-semibold font-hindi mb-6">राष्ट्र निर्माण में युवा शक्ति का आह्वान</p>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">राष्ट्रीय स्वयंसेवक संघ द्वारा प्रत्येक नगर में आयोजित 'युवा संगम' की इस श्रंखला में, हम आपको इंदौर के कार्यक्रम में सादर आमंत्रित करते हैं।</p>
+            <div class="bg-white text-gray-800 rounded-lg shadow-xl inline-block p-6 mb-8">
+                <p class="text-lg font-semibold mb-2">कार्यक्रम आरंभ होने में शेष:</p>
+                <div id="countdown" class="text-3xl font-bold text-orange-600 flex justify-center space-x-4">
+                    <div><span id="days"></span><p class="text-sm">दिन</p></div>
+                    <div><span id="hours"></span><p class="text-sm">घंटे</p></div>
+                    <div><span id="minutes"></span><p class="text-sm">मिनट</p></div>
+                    <div><span id="seconds"></span><p class="text-sm">सेकंड</p></div>
+                </div>
+            </div>
+            <div>
+                 <a href="#register" class="bg-green-500 text-white font-bold py-4 px-10 rounded-lg text-xl hover:bg-green-600 transition duration-300 shadow-lg animate-pulse">अभी पंजीकरण करें | शुल्क ₹10</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section (from your file) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 font-hindi">कार्यक्रम का विवरण</h2>
+            <div class="flex flex-wrap -mx-4 items-stretch">
+                <!-- Chief Guest -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md h-full flex flex-col justify-center">
+                        <img src="https://placehold.co/150x150/CCCCCC/FFFFFF?text=Chief+Guest" alt="Chief Guest" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-orange-500">
+                        <h3 class="text-xl font-bold mb-2 font-hindi">मुख्य अतिथि</h3>
+                        <p class="text-lg font-semibold">श्री संजीव अग्रवाल सर</p>
+                        <p class="text-gray-600">कुलाधिपति, सेज विश्वविद्यालय</p>
+                    </div>
+                </div>
+                <!-- Date, Time, Venue -->
+                <div class="w-full md:w-2/3 px-4 mb-8">
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6 h-full">
+                        <div class="flex items-center mb-6">
+                            <svg class="w-8 h-8 text-orange-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <h4 class="font-bold text-lg">दिनांक एवं समय</h4>
+                                <p class="text-gray-700">शनिवार, 16 नवंबर 2025 | दोपहर 2:00 बजे से</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-6">
+                             <svg class="w-8 h-8 text-orange-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <h4 class="font-bold text-lg">स्थान</h4>
+                                <p class="text-gray-700 font-semibold">सेज यूनिवर्सिटी इंदौर, स्पोर्ट्स काम्प्लेक्स</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 text-orange-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            <div>
+                                <h4 class="font-bold text-lg">प्रतिभागी</h4>
+                                <p class="text-gray-700">5000+ युवा (15 से 30 वर्ष)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Banner Image Section (from your file, now with a stable link) -->
+    <section class="container mx-auto px-6 py-8">
+        <div class="rounded-lg shadow-xl overflow-hidden">
+            <img src="WhatsApp Image 2025-10-04 at 5.24.52 PM.jpeg" alt="युवा संगम बैनर" class="w-full h-auto">
+        </div>
+    </section>
+
+    <!-- About the Event Sessions -->
+    <section class="py-16">
+        <h2 class="text-3xl font-bold text-center mb-4 font-hindi">कार्यक्रम का उद्देश्य</h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">हमारा मानना है कि राष्ट्र का विकास युवा शक्ति के सर्वांगीण विकास से ही संभव है। यह कार्यक्रम युवाओं में शारीरिक, बौद्धिक और सामाजिक चेतना जागृत करने और उन्हें राष्ट्र निर्माण में सक्रिय भूमिका निभाने के लिए प्रेरित करने हेतु आयोजित किया गया है।</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg">
+                     <div class="bg-orange-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-12 h-12 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 font-hindi">खेल</h3>
+                    <p class="text-gray-600">शारीरिक स्फूर्ति, टीम भावना और सामूहिकता के विकास हेतु मनोरंजक और प्रेरणादायक खेल सत्र।</p>
+                </div>
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg">
+                    <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 font-hindi">चर्चा</h3>
+                    <p class="text-gray-600">राष्ट्र और समाज से जुड़े सामयिक विषयों पर एक सार्थक और सकारात्मक विचार-मंथन सत्र।</p>
+                </div>
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg">
+                    <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 font-hindi">बौद्धिक</h3>
+                    <p class="text-gray-600">मुख्य अतिथि एवं अन्य वक्ताओं द्वारा ज्ञानवर्धन, राष्ट्रनिष्ठा और जीवन-निर्माण हेतु प्रेरणादायक उद्बोधन।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspirational Quotes Section (from your file) -->
+    <section class="py-16 bg-orange-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 font-hindi">युवाओं के लिए प्रेरणा</h2>
+            <div class="space-y-12">
+                <div class="md:flex md:items-center md:space-x-8">
+                    <img src="https://placehold.co/150x150/FFC300/000000?text=SV" alt="Swami Vivekananda" class="w-24 h-24 rounded-full mx-auto md:mx-0 mb-4 md:mb-0 flex-shrink-0">
+                    <div class="text-center md:text-left">
+                        <blockquote class="text-xl italic text-gray-700">"उठो, जागो और तब तक नहीं रुको जब तक लक्ष्य ना प्राप्त हो जाये।"</blockquote>
+                        <cite class="mt-2 block font-semibold text-gray-600">- स्वामी विवेकानंद</cite>
+                    </div>
+                </div>
+                <div class="md:flex md:items-center md:flex-row-reverse md:space-x-8 md:space-x-reverse">
+                    <img src="https://placehold.co/150x150/4D96FF/FFFFFF?text=APJ" alt="Dr. A.P.J. Abdul Kalam" class="w-24 h-24 rounded-full mx-auto md:mx-0 mb-4 md:mb-0 flex-shrink-0">
+                    <div class="text-center md:text-right">
+                        <blockquote class="text-xl italic text-gray-700">"युवाओं को मेरा सन्देश है कि वे अलग तरीके से सोचें, कुछ नया करने का प्रयत्न करें, हमेशा अपना रास्ता खुद बनायें और असफलता से न डरें।"</blockquote>
+                        <cite class="mt-2 block font-semibold text-gray-600">- डॉ. ए.पी.जे. अब्दुल कलाम</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ** NEW, INTEGRATED SECTION FOR JOINING RSS ** -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold font-hindi mb-4">Join RSS</h2>
+                <p class="text-gray-600 mb-6">विद्यार्थी जीवन व्यक्तित्व निर्माण का सर्वोत्तम समय है। राष्ट्रीय स्वयंसेवक संघ से जुड़कर आप अनुशासन, सेवा भाव, और नेतृत्व क्षमता का विकास करते हैं, जो एक सफल जीवन और सशक्त राष्ट्र की नींव है।</p>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-inner">
+                    <h3 class="text-xl font-semibold mb-4 font-hindi">यदि आप संघ से जुड़ने के इच्छुक हैं, तो कृपया अपनी जानकारी दें।</h3>
+                    <p class="text-sm text-gray-500 mb-4">हम आपसे संपर्क करेंगे। यह जानकारी गोपनीय रखी जाएगी।</p>
+                    <!-- Embedded Google Form for Joining RSS (This needs a *separate* Google Form) -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLS.../viewform?embedded=true" width="100%" height="280" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final Registration Section (PRIMARY GOAL) -->
+    <section class="py-20" id="register">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold font-hindi mb-4">युवा संगम में अपना स्थान सुनिश्चित करें</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">इस ऐतिहासिक कार्यक्रम का हिस्सा बनें। केवल ₹10 के पंजीकरण शुल्क के साथ आज ही अपना स्थान सुरक्षित करें!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk_D5C5R6hNxQ4wMR2uuWNNXXXWnhcasDOjkxYf5wLMUA6Dg/viewform" target="_blank" class="bg-green-500 text-white font-bold py-4 px-12 rounded-lg text-2xl hover:bg-green-600 transition duration-300 shadow-xl animate-pulse">Register Now (₹10)</a>
+        </div>
+    </section>
+
+
+    <!-- Footer (from your file) -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-4 font-hindi">आयोजक</h3>
+            <p class="mb-4 text-gray-300">इंदौर विभाग &rarr; रामेश्वरम जिला</p>
+            <p class="text-xl font-semibold mb-6">छत्रपति संभाजी नगर</p>
+            
+            <div class="border-t border-gray-700 pt-6">
+                <p class="font-bold">संपर्क करें (Contact Us):</p>
+                <p class="text-gray-400">किसी भी प्रश्न के लिए, कृपया यहा संपर्क करें: <a href="mailto:yuvsangam.indore@email.com" class="text-orange-400 hover:underline">9575625112</a></p>
+                 <p class="text-xs mt-4">&copy; 2025 युवा संगम | सर्वाधिकार सुरक्षित</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Countdown Timer
+        const countdownDate = new Date("Nov 16, 2025 14:00:00").getTime();
+
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            if(document.getElementById("days")) document.getElementById("days").innerText = days;
+            if(document.getElementById("hours")) document.getElementById("hours").innerText = hours;
+            if(document.getElementById("minutes")) document.getElementById("minutes").innerText = minutes;
+            if(document.getElementById("seconds")) document.getElementById("seconds").innerText = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                if(document.getElementById("countdown")) document.getElementById("countdown").innerHTML = "<p class='text-xl'>कार्यक्रम आरंभ हो चुका है!</p>";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
